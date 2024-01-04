@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .dodecahedron {
+        position: relative;
+        width: 0;
+        height: 0;
+        margin: 50px auto;
+      }
+
+      .face {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 58px 0;
+        border-color: #3498db transparent;
+      }
+
+      .face:nth-child(1) {
+        transform: rotateY(0deg);
+      }
+      .face:nth-child(2) {
+        transform: rotateY(72deg);
+      }
+      .face:nth-child(3) {
+        transform: rotateY(144deg);
+      }
+      .face:nth-child(4) {
+        transform: rotateY(216deg);
+      }
+      .face:nth-child(5) {
+        transform: rotateY(288deg);
+      }
+    </style>
+    <title>Dodecahedron</title>
+  </head>
+  <body>
+    <div class="dodecahedron">
+      <div class="face"></div>
+      <div class="face"></div>
+      <div class="face"></div>
+      <div class="face"></div>
+      <div class="face"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rectangle</title>
+
+    <style>
+      body {
+        margin: auto;
+        width: 40%;
+        height: 92vh;
+        background: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      h2 {
+        color: gold;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .line-1 {
+        position: absolute;
+        width: 215px;
+        height: 52px;
+        background: blue;
+        left: 110px;
+        bottom: 148px;
+        transform: rotate(115deg) translate(-101px, -34px) scale(0.5, 0.3)
+          skew(-55deg, -69.2deg);
+      }
+
+      .line-2 {
+        position: absolute;
+        width: 340px;
+        height: 198px;
+        background: red;
+        transform: rotate(147deg) translate(-172px, 12px) scale(0.25, 1)
+          skew(0deg, 9.2deg);
+        bottom: 68px;
+        left: 35px;
+      }
+      .line-3 {
+        width: 100px;
+        height: 40px;
+        background: yellow;
+        position: absolute;
+        right: 100px;
+        bottom: 148px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Rectangle</h2>
+
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="line-3"></div>
+  </body>
+</html>

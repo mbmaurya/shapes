@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube-two</title>
+
+    <style>
+      body {
+        margin: auto;
+        width: 40%;
+        height: 92vh;
+        background: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      h2 {
+        color: gold;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .line-1 {
+        position: absolute;
+        width: 115px;
+        height: 42px;
+        background: blue;
+        left: 182px;
+        top: 188px;
+        transform: rotate(101deg) translate(56px, -206px) scale(0.5, 2)
+          skew(39deg, -25deg);
+      }
+
+      .line-2 {
+        position: absolute;
+        width: 252px;
+        height: 48px;
+        background: red;
+        transform: rotate(-20deg) translate(88px, 116px) scale(0.25, 3)
+          skew(-77deg, 8deg);
+        left: 140px;
+      }
+
+      .line-3 {
+        position: absolute;
+        width: 85px;
+        height: 153px;
+        background: yellow;
+        right: 25px;
+        bottom: 107px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Cube-two</h2>
+
+    <div class="line-1"></div>
+    <div class="line-2"></div>
+    <div class="line-3"></div>
+  </body>
+</html>

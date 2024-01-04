@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cube-cone Shape</title>
+    <style>
+      body {
+        margin: auto;
+        width: 40%;
+        height: 92vh;
+        background: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+
+      h2 {
+        color: gold;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .shape-1 {
+        width: 115px;
+        height: 60px;
+        position: absolute;
+        bottom: 315px;
+        right: -8px;
+        background: grey;
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        transform: rotateX(-65deg) rotateY(0deg) rotateZ(1deg) skew(14deg, 0deg);
+      }
+      .shape-2 {
+        width: 190px;
+        height: 197px;
+        position: absolute;
+        bottom: 148px;
+        right: 2px;
+        background: red;
+        clip-path: polygon(45% 0%, 81% 7%, 100% 100%, 10% 89%);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      }
+      .shape-3 {
+        width: 200px;
+        height: 196px;
+        position: absolute;
+        bottom: 148px;
+        right: -98px;
+        background: gold;
+        clip-path: polygon(30% 6%, 55% 0%, 90% 80%, 50% 100%);
+        transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Cube-cone Shape</h2>
+    <div class="shape-1"></div>
+    <div class="shape-2"></div>
+    <div class="shape-3"></div>
+  </body>
+</html>

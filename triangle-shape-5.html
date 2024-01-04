@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Triangle</title>
+
+    <style>
+      body {
+        margin: auto;
+        width: 40%;
+        height: 92vh;
+        background: #000000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      h2 {
+        color: gold;
+        font-size: 48px;
+        font-weight: bold;
+      }
+
+      .shape-1 {
+        border-bottom: 100px solid blue;
+        border-left: 10px solid transparent;
+        border-right: 225px solid transparent;
+        transform: rotate(-69deg) translate(17px, -40px) skew(12.5deg, -21deg);
+      }
+      .shape-1::after {
+        content: "";
+        position: absolute;
+        border-bottom: 125px solid gold;
+        border-left: 152px solid transparent;
+        border-right: 69px solid transparent;
+        transform: rotate(-159deg) translate(-20px, -99px) skew(7.5deg, -21deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h2>3D Triangle</h2>
+
+    <div class="shape-1"></div>
+  </body>
+</html>
